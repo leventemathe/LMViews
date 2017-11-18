@@ -104,9 +104,7 @@ open class LMView: UIView {
     
     
     override open class var layerClass: AnyClass {
-        get {
-            return CAGradientLayer.self
-        }
+        return CAGradientLayer.self
     }
     
     @IBInspectable

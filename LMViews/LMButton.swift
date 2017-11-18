@@ -57,4 +57,87 @@ open class LMButton: UIButton {
         layer.shadowOffset = CGSize.zero
         layer.shadowRadius = 0.0
     }
+    
+    
+    
+    @IBInspectable open var cornerRadius: CGFloat = 0.0 {
+        didSet {
+            layer.cornerRadius = cornerRadius
+        }
+    }
+    
+    
+    
+    @IBInspectable
+    open var border: Bool = false {
+        didSet {
+            if border {
+                setBorder()
+            } else {
+                removeBorder()
+            }
+        }
+    }
+    
+    @IBInspectable open var borderWidth: CGFloat = 0.0 {
+        didSet {
+            layer.borderWidth = borderWidth
+        }
+    }
+    
+    @IBInspectable open var borderColor: UIColor = UIColor.black {
+        didSet {
+            layer.borderColor = borderColor.cgColor
+        }
+    }
+    
+    private func setBorder() {
+        layer.borderWidth = borderWidth
+        layer.borderColor = borderColor.cgColor
+    }
+    
+    private func removeBorder() {
+        layer.borderWidth = 0.0
+        layer.borderColor = nil
+    }
+    
+    override open class var layerClass: AnyClass {
+        return CAGradientLayer.self
+    }
+    
+    
+    
+    @IBInspectable
+    open var gradient: Bool = false {
+        didSet {
+            if gradient {
+                setGradient()
+            } else {
+                removeGradient()
+            }
+        }
+    }
+    
+    @IBInspectable var gradientColorA: UIColor = UIColor.black {
+        didSet {
+            setGradient()
+        }
+    }
+    
+    @IBInspectable var gradientColorB: UIColor = UIColor.white {
+        didSet {
+            setGradient()
+        }
+    }
+    
+    private func setGradient() {
+        let gradientLayer = layer as! CAGradientLayer
+        gradientLayer.colors = [gradientColorA.cgColor, gradientColorB.cgColor]
+    }
+    
+    private func removeGradient() {
+        let gradientLayer = layer as! CAGradientLayer
+        gradientLayer.colors = nil
+    }
+
 }

@@ -60,31 +60,12 @@ open class LMView: UIView {
     
     
     
-    @IBInspectable
-    open var roundedCorners: Bool = false {
-        didSet {
-            if roundedCorners {
-                setRoundedCorners()
-            } else {
-                removeRoundedCorners()
-            }
-        }
-    }
-    
     @IBInspectable open var cornerRadius: CGFloat = 0.0 {
         didSet {
             layer.cornerRadius = cornerRadius
         }
     }
-    
-    private func setRoundedCorners() {
-        layer.cornerRadius = cornerRadius
-    }
-    
-    private func removeRoundedCorners() {
-        layer.cornerRadius = 0.0
-    }
-    
+
     
     
     @IBInspectable
@@ -122,6 +103,12 @@ open class LMView: UIView {
     
     
     
+    override open class var layerClass: AnyClass {
+        get {
+            return CAGradientLayer.self
+        }
+    }
+    
     @IBInspectable
     open var gradient: Bool = false {
         didSet {
@@ -133,48 +120,25 @@ open class LMView: UIView {
         }
     }
     
-    private var gradientLayer: CAGradientLayer?
-    
     @IBInspectable var gradientColorA: UIColor = UIColor.black {
         didSet {
-            setGradientColors()
+            setGradient()
         }
     }
     
     @IBInspectable var gradientColorB: UIColor = UIColor.white {
         didSet {
-            setGradientColors()
-        }
-    }
-    
-    private func setGradient() {
-        gradientLayer = CAGradientLayer()
-        gradientLayer?.frame = self.bounds
-        gradientLayer?.colors = [gradientColorA.cgColor, gradientColorB.cgColor]
-        layer.addSublayer(gradientLayer!)
-    }
-    
-    private func setGradientColors() {
-        if let gradient = gradientLayer {
-            gradient.colors = [gradientColorA.cgColor, gradientColorB.cgColor]
-        } else {
             setGradient()
         }
     }
     
+    private func setGradient() {
+        let gradientLayer = layer as! CAGradientLayer
+        gradientLayer.colors = [gradientColorA.cgColor, gradientColorB.cgColor]
+    }
+    
     private func removeGradient() {
-        gradientLayer?.removeFromSuperlayer()
-        gradientLayer = nil
-    }
-    
-    private func adjustGradientSize() {
-        gradientLayer?.frame = self.bounds
-    }
-    
-    
-    
-    open override func layoutSubviews() {
-        super.layoutSubviews()
-        adjustGradientSize()
+        let gradientLayer = layer as! CAGradientLayer
+        gradientLayer.colors = nil
     }
 }

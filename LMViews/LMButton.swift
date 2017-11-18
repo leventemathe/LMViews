@@ -9,7 +9,7 @@
 import Foundation
 
 @IBDesignable
-class LMButton: UIButton {
+open class LMButton: UIButton {
     
     @IBInspectable open  var shadow: Bool = false {
         didSet {

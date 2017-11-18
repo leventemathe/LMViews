@@ -101,40 +101,55 @@ open class LMTextField: UITextField {
     }
     
     @IBInspectable
+    open var textPadding: Bool = false {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+    
+    @IBInspectable
     open var textPaddingLeft: CGFloat = 0.0{
         didSet {
-            textPadding.left = textPaddingLeft
+            textPaddingInsets.left = textPaddingLeft
         }
     }
     
     @IBInspectable
     open var textPaddingRight: CGFloat = 0.0{
         didSet {
-            textPadding.right = textPaddingRight
+            textPaddingInsets.right = textPaddingRight
         }
     }
     
     @IBInspectable
     open var textPaddingTop: CGFloat = 0.0{
         didSet {
-            textPadding.top = textPaddingTop
+            textPaddingInsets.top = textPaddingTop
         }
     }
     
     @IBInspectable
     open var textPaddingBottom: CGFloat = 0.0{
         didSet {
-            textPadding.bottom = textPaddingBottom
+            textPaddingInsets.bottom = textPaddingBottom
         }
     }
     
-    private var textPadding: UIEdgeInsets = UIEdgeInsets.zero
+    private var textPaddingInsets: UIEdgeInsets = UIEdgeInsets.zero
     
     open override func textRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, textPadding)
+        if textPadding {
+            return UIEdgeInsetsInsetRect(bounds, textPaddingInsets)
+        } else {
+            return super.textRect(forBounds: bounds)
+        }
     }
     
     open override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, textPadding)
+        if textPadding {
+            return UIEdgeInsetsInsetRect(bounds, textPaddingInsets)
+        } else {
+            return super.textRect(forBounds: bounds)
+        }
     }
 }

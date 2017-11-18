@@ -201,9 +201,7 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="textPadding">
-                                                <size key="value" width="20" height="20"/>
-                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="textPadding" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="textPaddingLeft">
                                                 <real key="value" value="12"/>
                                             </userDefinedRuntimeAttribute>

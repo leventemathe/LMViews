@@ -115,28 +115,28 @@ open class LMTextField: UITextField {
     }
     
     @IBInspectable
-    open var textPaddingLeft: CGFloat = 0.0{
+    open var textPaddingLeft: CGFloat = 0.0 {
         didSet {
             textPaddingInsets.left = textPaddingLeft
         }
     }
     
     @IBInspectable
-    open var textPaddingRight: CGFloat = 0.0{
+    open var textPaddingRight: CGFloat = 0.0 {
         didSet {
             textPaddingInsets.right = textPaddingRight
         }
     }
     
     @IBInspectable
-    open var textPaddingTop: CGFloat = 0.0{
+    open var textPaddingTop: CGFloat = 0.0 {
         didSet {
             textPaddingInsets.top = textPaddingTop
         }
     }
     
     @IBInspectable
-    open var textPaddingBottom: CGFloat = 0.0{
+    open var textPaddingBottom: CGFloat = 0.0 {
         didSet {
             textPaddingInsets.bottom = textPaddingBottom
         }
@@ -199,6 +199,7 @@ open class LMTextField: UITextField {
         if let btn = rightView as? UIButton {
             btn.frame.size.width += clearButtonPaddingRight
             btn.imageEdgeInsets.right = clearButtonPaddingRight
+            textPaddingInsets.right += clearButtonPaddingRight
         }
     }
     
@@ -221,6 +222,8 @@ open class LMTextField: UITextField {
             btn.frame.size.height += textPaddingInsets.bottom + textPaddingInsets.top
             btn.imageEdgeInsets.bottom = textPaddingInsets.bottom
             btn.imageEdgeInsets.top = textPaddingInsets.top
+            
+            textPaddingInsets.right += paddingBetweenTextAndClearButton
         }
 
     }

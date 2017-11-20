@@ -139,5 +139,4 @@ open class LMButton: UIButton {
         let gradientLayer = layer as! CAGradientLayer
         gradientLayer.colors = nil
     }
-
 }

@@ -9,6 +9,19 @@
 import UIKit
 import LMViews
 
+extension UIViewController {
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var gradientViewWidthConstraint: NSLayoutConstraint!
@@ -24,6 +37,11 @@ class ViewController: UIViewController {
         }, completion: { _ in
             self.viewSizeChange = -self.viewSizeChange
         })
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
     }
 }
 

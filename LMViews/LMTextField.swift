@@ -65,6 +65,13 @@ open class LMTextField: UITextField {
         }
     }
     
+    @IBInspectable
+    open var backgroundColorForRoundedCorners: UIColor = UIColor.clear {
+        didSet {
+            layer.backgroundColor = backgroundColorForRoundedCorners.cgColor
+        }
+    }
+    
     
     
     @IBInspectable
@@ -151,5 +158,95 @@ open class LMTextField: UITextField {
         } else {
             return super.textRect(forBounds: bounds)
         }
+    }
+    
+    
+    
+    @IBInspectable
+    open var clearButton: UIImage? {
+        didSet {
+            if let img = clearButton {
+                setClearButton(img)
+            } else {
+                removeClearButton()
+            }
+        }
+    }
+    
+    @IBInspectable
+    open var clearButtonPaddingRight: CGFloat = 0.0 {
+        didSet {
+            adjustClearButtonPadding()
+        }
+    }
+    
+    private func setClearButton(_ image: UIImage) {
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 15, height: 15))
+        button.setImage(clearButton, for: .normal)
+        button.addTarget(self, action: #selector(clearText(sender:)), for: UIControlEvents.touchUpInside)
+        rightView = button
+        
+        self.clearButtonMode = .never
+        self.rightViewMode = .whileEditing
+    }
+    
+    private func removeClearButton() {
+        rightView = nil
+        self.rightViewMode = .never
+    }
+    
+    private func adjustClearButtonPadding() {
+        if let btn = rightView as? UIButton {
+            btn.frame.size.width += clearButtonPaddingRight
+            btn.imageEdgeInsets.right = clearButtonPaddingRight
+        }
+    }
+    
+    @objc func clearText(sender: UIButton) {
+        text = ""
+    }
+    
+    @IBInspectable
+    open var paddingBetweenTextAndClearButton: CGFloat = 0.0 {
+        didSet {
+            adjustPaddingBetweenTextAndClearButton()
+        }
+    }
+    
+    private func adjustPaddingBetweenTextAndClearButton() {
+        if let btn = rightView as? UIButton {
+            btn.frame.size.width += paddingBetweenTextAndClearButton
+            btn.imageEdgeInsets.left = paddingBetweenTextAndClearButton
+            
+            btn.frame.size.height += textPaddingInsets.bottom + textPaddingInsets.top
+            btn.imageEdgeInsets.bottom = textPaddingInsets.bottom
+            btn.imageEdgeInsets.top = textPaddingInsets.top
+        }
+
+    }
+    
+    @IBInspectable
+    open var underlineWidth: CGFloat = 0.0
+    
+    @IBInspectable
+    open var underlineColor: UIColor = UIColor.black
+    
+    override open func draw(_ rect: CGRect) {
+        super.draw(rect)
+        
+        if underlineWidth <= 0 {
+            return
+        }
+        
+        let start = CGPoint(x: rect.minX, y: rect.maxY)
+        let end = CGPoint(x: rect.maxX, y: rect.maxY)
+        let path = UIBezierPath()
+        
+        path.move(to: start)
+        path.addLine(to: end)
+        path.lineWidth = underlineWidth
+        underlineColor.setStroke()
+        
+        path.stroke()
     }
 }

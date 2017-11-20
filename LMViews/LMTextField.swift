@@ -8,7 +8,21 @@
 
 import UIKit
 
-open class LMTextField: UITextField {
+open class LMTextField: UITextField, UITextFieldDelegate {
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    
+    private func setup() {
+        delegate = self
+    }
     
     @IBInspectable open  var shadow: Bool = false {
         didSet {
@@ -228,6 +242,8 @@ open class LMTextField: UITextField {
 
     }
     
+    
+    
     @IBInspectable
     open var underlineWidth: CGFloat = 0.0
     
@@ -251,5 +267,26 @@ open class LMTextField: UITextField {
         underlineColor.setStroke()
         
         path.stroke()
+    }
+    
+    
+    
+    @IBInspectable
+    open var numbersOnly: Bool = false
+
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if numbersOnly {
+            return checkForNumbersOnly(string)
+        }
+        return true
+    }
+    
+    let numberPattern = "\\d+(\\.\\d*)?"
+    
+    private func checkForNumbersOnly(_ string: String) -> Bool {
+        let newString = (text ?? "") + string
+        let r1 = newString.startIndex..<newString.endIndex
+        let r2 = newString.range(of: numberPattern, options: .regularExpression)
+        return r1 == r2
     }
 }

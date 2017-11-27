@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LMViews"
-  s.version      = "0.2"
+  s.version      = "0.3"
   s.summary      = "A set of IBDesignable UIView subclasses with IBInspectable properties"
   s.homepage     = "https://github.com/leviouss/LMViews"
   s.license      = "MIT"

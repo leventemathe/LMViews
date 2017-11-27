@@ -17,6 +17,7 @@
 		D7DEEF2E1FBDD03E00F46E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEEF2C1FBDD03E00F46E3A /* LaunchScreen.storyboard */; };
 		D7DEEF341FBDD09300F46E3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEEF331FBDD09300F46E3A /* Main.storyboard */; };
 		D7DEEF361FBDD0B200F46E3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEEF351FBDD0B200F46E3A /* ViewController.swift */; };
+		D7E3839F1FCC6A4C00B64682 /* LMPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E3839E1FCC6A4C00B64682 /* LMPageViewController.swift */; };
 		D7F6E37E1FBDD5FA00150162 /* LMViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DEEED51FBDCDF600F46E3A /* LMViews.framework */; };
 		D7F6E37F1FBDD64A00150162 /* LMViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DEEED51FBDCDF600F46E3A /* LMViews.framework */; };
 		D7F6E3801FBDD64A00150162 /* LMViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7DEEED51FBDCDF600F46E3A /* LMViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -70,6 +71,7 @@
 		D7DEEF2F1FBDD03E00F46E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7DEEF331FBDD09300F46E3A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D7DEEF351FBDD0B200F46E3A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7E3839E1FCC6A4C00B64682 /* LMPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMPageViewController.swift; sourceTree = "<group>"; };
 		D7F6E3821FBDE42300150162 /* LMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 				D7DEEEEF1FBDCEC000F46E3A /* LMView.swift */,
 				D7F6E3821FBDE42300150162 /* LMButton.swift */,
 				D7441AE91FC052990010D649 /* LMTextField.swift */,
+				D7E3839E1FCC6A4C00B64682 /* LMPageViewController.swift */,
 				D7DEEED81FBDCDF600F46E3A /* LMViews.h */,
 				D7DEEED91FBDCDF600F46E3A /* Info.plist */,
 			);
@@ -311,6 +314,7 @@
 			files = (
 				D7F6E3831FBDE42300150162 /* LMButton.swift in Sources */,
 				D7441AEA1FC052990010D649 /* LMTextField.swift in Sources */,
+				D7E3839F1FCC6A4C00B64682 /* LMPageViewController.swift in Sources */,
 				D7DEEEF01FBDCEC000F46E3A /* LMView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

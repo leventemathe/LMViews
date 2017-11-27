@@ -22,16 +22,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="80H-ki-WHj">
-                                <rect key="frame" x="98.5" y="36" width="178" height="356.5"/>
+                                <rect key="frame" x="87.5" y="36" width="200" height="448.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THg-ci-pkh">
-                                        <rect key="frame" x="53.5" y="0.0" width="71" height="20.5"/>
+                                        <rect key="frame" x="64.5" y="0.0" width="71" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nI9-e8-WbI" customClass="LMView" customModule="LMViews">
-                                        <rect key="frame" x="29" y="32.5" width="120" height="60"/>
+                                        <rect key="frame" x="40" y="32.5" width="120" height="60"/>
                                         <color key="backgroundColor" red="1" green="0.60784313729999995" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="HRW-5h-4w1"/>
@@ -71,7 +71,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJn-96-y3o" customClass="LMView" customModule="LMViews">
-                                        <rect key="frame" x="29" y="104.5" width="120" height="60"/>
+                                        <rect key="frame" x="40" y="104.5" width="120" height="60"/>
                                         <color key="backgroundColor" red="1" green="0.60784313729999995" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="8Ff-Qe-DDG"/>
@@ -111,7 +111,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdu-SQ-cag" customClass="LMButton" customModule="LMViews">
-                                        <rect key="frame" x="13" y="176.5" width="152" height="26"/>
+                                        <rect key="frame" x="24" y="176.5" width="152" height="26"/>
                                         <color key="backgroundColor" red="1" green="0.60784313729999995" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
                                         <state key="normal" title="Change UIView sizes"/>
@@ -138,7 +138,7 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Underlined textfield" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hfz-09-QPq" customClass="LMTextField" customModule="LMViews">
-                                        <rect key="frame" x="23.5" y="214.5" width="131" height="17"/>
+                                        <rect key="frame" x="34.5" y="214.5" width="131" height="17"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -172,7 +172,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Text field" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="em0-PU-bS5" customClass="LMTextField" customModule="LMViews">
-                                        <rect key="frame" x="57.5" y="243.5" width="63" height="17"/>
+                                        <rect key="frame" x="68.5" y="243.5" width="63" height="17"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -226,7 +226,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="This only takes numbers" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hxy-My-HFr" customClass="LMTextField" customModule="LMViews">
-                                        <rect key="frame" x="0.0" y="272.5" width="178" height="30"/>
+                                        <rect key="frame" x="11" y="272.5" width="178" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -235,7 +235,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9b-03-cbw" customClass="LMButton" customModule="LMViews">
-                                        <rect key="frame" x="54" y="314.5" width="70" height="42"/>
+                                        <rect key="frame" x="65" y="314.5" width="70" height="42"/>
                                         <inset key="contentEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
                                         <state key="normal" title="Button"/>
                                         <userDefinedRuntimeAttributes>
@@ -271,6 +271,17 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cm-pR-baP">
+                                        <rect key="frame" x="0.0" y="368.5" width="200" height="80"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="8SM-eH-XPX"/>
+                                            <constraint firstAttribute="height" constant="80" id="FOF-HE-PeE"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="Amv-1P-7u7" kind="embed" id="x7V-Fh-0Qq"/>
+                                        </connections>
+                                    </containerView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -288,6 +299,79 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="30.134932533733135"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="70v-yd-MEj">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Amv-1P-7u7" customClass="LMPageViewController" customModule="LMViews" sceneMemberID="viewController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="pageIds" value="page1,page2"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="storyboardName" value="Main"/>
+                    </userDefinedRuntimeAttributes>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AiZ-qp-ayZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669" y="131"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Z3p-Mp-V73">
+            <objects>
+                <viewController storyboardIdentifier="page1" id="8Da-cu-hYf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XpO-tY-EKA"/>
+                        <viewControllerLayoutGuide type="bottom" id="7K4-Xo-mNn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fiU-4a-q4b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is page one" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2f-UR-53W">
+                                <rect key="frame" x="125" y="323" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D2f-UR-53W" firstAttribute="centerX" secondItem="fiU-4a-q4b" secondAttribute="centerX" id="bdh-VB-1RQ"/>
+                            <constraint firstItem="D2f-UR-53W" firstAttribute="centerY" secondItem="fiU-4a-q4b" secondAttribute="centerY" id="yo3-cW-VxU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RjQ-mS-k2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1274" y="97"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8JU-sa-zgo">
+            <objects>
+                <viewController storyboardIdentifier="page2" id="QBG-eC-Im1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3ng-Al-eE5"/>
+                        <viewControllerLayoutGuide type="bottom" id="lDh-AR-1RN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdo-2f-bIv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is page two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZV-Ol-rbY">
+                                <rect key="frame" x="125" y="323" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.60784313729999995" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1ZV-Ol-rbY" firstAttribute="centerY" secondItem="bdo-2f-bIv" secondAttribute="centerY" id="gSc-xE-0Y1"/>
+                            <constraint firstItem="1ZV-Ol-rbY" firstAttribute="centerX" secondItem="bdo-2f-bIv" secondAttribute="centerX" id="rIc-v5-qWX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4xc-3H-ndN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926" y="97"/>
         </scene>
     </scenes>
     <resources>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D7441AEA1FC052990010D649 /* LMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7441AE91FC052990010D649 /* LMTextField.swift */; };
 		D77D0A2D1FF54F92001325C6 /* LMSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D0A2C1FF54F92001325C6 /* LMSegmentedControl.swift */; };
+		D7AFBBA21FFD12D600A96B07 /* LMImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFBBA11FFD12D600A96B07 /* LMImageView.swift */; };
 		D7CB65F41FF547EC00178413 /* LMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CB65F31FF547EB00178413 /* LMLabel.swift */; };
 		D7DEEEDF1FBDCDF600F46E3A /* LMViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DEEED51FBDCDF600F46E3A /* LMViews.framework */; };
 		D7DEEEE41FBDCDF600F46E3A /* LMViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEEEE31FBDCDF600F46E3A /* LMViewsTests.swift */; };
@@ -60,6 +61,7 @@
 /* Begin PBXFileReference section */
 		D7441AE91FC052990010D649 /* LMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMTextField.swift; sourceTree = "<group>"; };
 		D77D0A2C1FF54F92001325C6 /* LMSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMSegmentedControl.swift; sourceTree = "<group>"; };
+		D7AFBBA11FFD12D600A96B07 /* LMImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMImageView.swift; sourceTree = "<group>"; };
 		D7CB65F31FF547EB00178413 /* LMLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMLabel.swift; sourceTree = "<group>"; };
 		D7DEEED51FBDCDF600F46E3A /* LMViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LMViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DEEED81FBDCDF600F46E3A /* LMViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMViews.h; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				D7E3839E1FCC6A4C00B64682 /* LMPageViewController.swift */,
 				D7CB65F31FF547EB00178413 /* LMLabel.swift */,
 				D77D0A2C1FF54F92001325C6 /* LMSegmentedControl.swift */,
+				D7AFBBA11FFD12D600A96B07 /* LMImageView.swift */,
 				D7DEEED81FBDCDF600F46E3A /* LMViews.h */,
 				D7DEEED91FBDCDF600F46E3A /* Info.plist */,
 			);
@@ -318,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7AFBBA21FFD12D600A96B07 /* LMImageView.swift in Sources */,
 				D7F6E3831FBDE42300150162 /* LMButton.swift in Sources */,
 				D7441AEA1FC052990010D649 /* LMTextField.swift in Sources */,
 				D7E3839F1FCC6A4C00B64682 /* LMPageViewController.swift in Sources */,

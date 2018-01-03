@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LMImageView: UIImageView {
+open class LMImageView: UIImageView {
 
     @IBInspectable open var cornerRadius: CGFloat = 0.0 {
         didSet {

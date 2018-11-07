@@ -11,8 +11,6 @@
 		D77D0A2D1FF54F92001325C6 /* LMSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D0A2C1FF54F92001325C6 /* LMSegmentedControl.swift */; };
 		D7AFBBA21FFD12D600A96B07 /* LMImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AFBBA11FFD12D600A96B07 /* LMImageView.swift */; };
 		D7CB65F41FF547EC00178413 /* LMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CB65F31FF547EB00178413 /* LMLabel.swift */; };
-		D7DEEEDF1FBDCDF600F46E3A /* LMViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DEEED51FBDCDF600F46E3A /* LMViews.framework */; };
-		D7DEEEE41FBDCDF600F46E3A /* LMViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEEEE31FBDCDF600F46E3A /* LMViewsTests.swift */; };
 		D7DEEEE61FBDCDF600F46E3A /* LMViews.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DEEED81FBDCDF600F46E3A /* LMViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7DEEEF01FBDCEC000F46E3A /* LMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEEEEF1FBDCEC000F46E3A /* LMView.swift */; };
 		D7DEEF241FBDD03E00F46E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEEF231FBDD03E00F46E3A /* AppDelegate.swift */; };
@@ -21,20 +19,12 @@
 		D7DEEF341FBDD09300F46E3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEEF331FBDD09300F46E3A /* Main.storyboard */; };
 		D7DEEF361FBDD0B200F46E3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DEEF351FBDD0B200F46E3A /* ViewController.swift */; };
 		D7E3839F1FCC6A4C00B64682 /* LMPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E3839E1FCC6A4C00B64682 /* LMPageViewController.swift */; };
-		D7F6E37E1FBDD5FA00150162 /* LMViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DEEED51FBDCDF600F46E3A /* LMViews.framework */; };
 		D7F6E37F1FBDD64A00150162 /* LMViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DEEED51FBDCDF600F46E3A /* LMViews.framework */; };
 		D7F6E3801FBDD64A00150162 /* LMViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7DEEED51FBDCDF600F46E3A /* LMViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D7F6E3831FBDE42300150162 /* LMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F6E3821FBDE42300150162 /* LMButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D7DEEEE01FBDCDF600F46E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D7DEEECC1FBDCDF600F46E3A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D7DEEED41FBDCDF600F46E3A;
-			remoteInfo = LMViews;
-		};
 		D7DEEF3B1FBDD39A00F46E3A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D7DEEECC1FBDCDF600F46E3A /* Project object */;
@@ -66,9 +56,6 @@
 		D7DEEED51FBDCDF600F46E3A /* LMViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LMViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DEEED81FBDCDF600F46E3A /* LMViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMViews.h; sourceTree = "<group>"; };
 		D7DEEED91FBDCDF600F46E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7DEEEDE1FBDCDF600F46E3A /* LMViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LMViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7DEEEE31FBDCDF600F46E3A /* LMViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMViewsTests.swift; sourceTree = "<group>"; };
-		D7DEEEE51FBDCDF600F46E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7DEEEEF1FBDCEC000F46E3A /* LMView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LMView.swift; sourceTree = "<group>"; };
 		D7DEEF211FBDD03E00F46E3A /* LMViews Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LMViews Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DEEF231FBDD03E00F46E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,20 +76,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7DEEEDB1FBDCDF600F46E3A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D7DEEEDF1FBDCDF600F46E3A /* LMViews.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D7DEEF1E1FBDD03E00F46E3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D7F6E37F1FBDD64A00150162 /* LMViews.framework in Frameworks */,
-				D7F6E37E1FBDD5FA00150162 /* LMViews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +92,6 @@
 			children = (
 				D7DEEED71FBDCDF600F46E3A /* LMViews */,
 				D7DEEF221FBDD03E00F46E3A /* LMViews Demo */,
-				D7DEEEE21FBDCDF600F46E3A /* LMViewsTests */,
 				D7DEEED61FBDCDF600F46E3A /* Products */,
 				D7F6E37C1FBDD56400150162 /* Frameworks */,
 			);
@@ -124,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				D7DEEED51FBDCDF600F46E3A /* LMViews.framework */,
-				D7DEEEDE1FBDCDF600F46E3A /* LMViewsTests.xctest */,
 				D7DEEF211FBDD03E00F46E3A /* LMViews Demo.app */,
 			);
 			name = Products;
@@ -144,15 +120,6 @@
 				D7DEEED91FBDCDF600F46E3A /* Info.plist */,
 			);
 			path = LMViews;
-			sourceTree = "<group>";
-		};
-		D7DEEEE21FBDCDF600F46E3A /* LMViewsTests */ = {
-			isa = PBXGroup;
-			children = (
-				D7DEEEE31FBDCDF600F46E3A /* LMViewsTests.swift */,
-				D7DEEEE51FBDCDF600F46E3A /* Info.plist */,
-			);
-			path = LMViewsTests;
 			sourceTree = "<group>";
 		};
 		D7DEEF221FBDD03E00F46E3A /* LMViews Demo */ = {
@@ -207,24 +174,6 @@
 			productReference = D7DEEED51FBDCDF600F46E3A /* LMViews.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D7DEEEDD1FBDCDF600F46E3A /* LMViewsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D7DEEEEC1FBDCDF600F46E3A /* Build configuration list for PBXNativeTarget "LMViewsTests" */;
-			buildPhases = (
-				D7DEEEDA1FBDCDF600F46E3A /* Sources */,
-				D7DEEEDB1FBDCDF600F46E3A /* Frameworks */,
-				D7DEEEDC1FBDCDF600F46E3A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D7DEEEE11FBDCDF600F46E3A /* PBXTargetDependency */,
-			);
-			name = LMViewsTests;
-			productName = LMViewsTests;
-			productReference = D7DEEEDE1FBDCDF600F46E3A /* LMViewsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		D7DEEF201FBDD03E00F46E3A /* LMViews Demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7DEEF301FBDD03E00F46E3A /* Build configuration list for PBXNativeTarget "LMViews Demo" */;
@@ -251,16 +200,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Máthé Levente";
 				TargetAttributes = {
 					D7DEEED41FBDCDF600F46E3A = {
 						CreatedOnToolsVersion = 9.1;
 						LastSwiftMigration = 0910;
-						ProvisioningStyle = Automatic;
-					};
-					D7DEEEDD1FBDCDF600F46E3A = {
-						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
 					D7DEEF201FBDD03E00F46E3A = {
@@ -283,7 +228,6 @@
 			projectRoot = "";
 			targets = (
 				D7DEEED41FBDCDF600F46E3A /* LMViews */,
-				D7DEEEDD1FBDCDF600F46E3A /* LMViewsTests */,
 				D7DEEF201FBDD03E00F46E3A /* LMViews Demo */,
 			);
 		};
@@ -291,13 +235,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		D7DEEED31FBDCDF600F46E3A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7DEEEDC1FBDCDF600F46E3A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -331,14 +268,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7DEEEDA1FBDCDF600F46E3A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D7DEEEE41FBDCDF600F46E3A /* LMViewsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D7DEEF1D1FBDD03E00F46E3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,11 +280,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D7DEEEE11FBDCDF600F46E3A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D7DEEED41FBDCDF600F46E3A /* LMViews */;
-			targetProxy = D7DEEEE01FBDCDF600F46E3A /* PBXContainerItemProxy */;
-		};
 		D7DEEF3C1FBDD39A00F46E3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D7DEEED41FBDCDF600F46E3A /* LMViews */;
@@ -389,6 +313,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -396,6 +321,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -449,6 +375,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -456,6 +383,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -507,7 +435,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -530,37 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.levente.mathe.LMViews;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		D7DEEEED1FBDCDF600F46E3A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2XA4EDUMR4;
-				INFOPLIST_FILE = LMViewsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.levente.mathe.LMViewsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		D7DEEEEE1FBDCDF600F46E3A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2XA4EDUMR4;
-				INFOPLIST_FILE = LMViewsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.levente.mathe.LMViewsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -577,7 +475,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.levente.mathe.LMViews-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -594,7 +492,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.levente.mathe.LMViews-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -616,15 +514,6 @@
 			buildConfigurations = (
 				D7DEEEEA1FBDCDF600F46E3A /* Debug */,
 				D7DEEEEB1FBDCDF600F46E3A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D7DEEEEC1FBDCDF600F46E3A /* Build configuration list for PBXNativeTarget "LMViewsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D7DEEEED1FBDCDF600F46E3A /* Debug */,
-				D7DEEEEE1FBDCDF600F46E3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
